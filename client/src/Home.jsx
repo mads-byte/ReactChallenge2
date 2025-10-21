@@ -8,7 +8,7 @@ function Home() {
 
     async function getMovies(query) {
         try {
-            const response = await fetch(`http://localhost:3000/movies?q=${query}`);
+            const response = await fetch(`/movies?q=${query}`);
             const data = await response.json();
 
 
