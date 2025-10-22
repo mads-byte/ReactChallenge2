@@ -8,7 +8,7 @@ function Home() {
 
     async function getMovies(query) {
         try {
-            const response = await fetch(`/movies?q=${query}`);
+            const response = await fetch(`https://reactchallenge2-1.onrender.com/movies?q=${query}`);
             const data = await response.json();
 
 

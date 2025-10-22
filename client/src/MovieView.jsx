@@ -8,7 +8,7 @@ function MovieView() {
     useEffect(() => {
         async function fetchMovie() {
             try {
-                const response = await fetch(`/movie/${id}`);
+                const response = await fetch(`https://reactchallenge2-1.onrender.com/movie/${id}`);
                 const data = await response.json();
                 setMovie({
                     poster: `https://image.tmdb.org/t/p/w300${data.poster_path}`,
